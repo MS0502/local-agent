@@ -1,0 +1,231 @@
+{
+  "schema": "ada-v3-public-pinned-task-manifest-v1",
+  "source": "SWE-Gym/SWE-Gym",
+  "source_revision": "bb94ed9e39bbeb96a7fcbfb533b80f25a7fd59cb",
+  "task_count": 10,
+  "patch_contents_included": false,
+  "tasks": [
+    {
+      "task_id": "getmoto__moto-7365",
+      "repository_id": "getmoto/moto",
+      "repository_url": "https://github.com/getmoto/moto",
+      "license": "Apache-2.0",
+      "base_commit": "7f6c9cb1deafb280fe7fcc7551c38e397f11a706",
+      "issue_url": "https://github.com/getmoto/moto/pull/7365",
+      "source_row_offset": 0,
+      "FAIL_TO_PASS": [
+        "tests/test_dynamodb/test_dynamodb_update_expressions.py::test_update_item_add_float"
+      ],
+      "PASS_TO_PASS_count": 1,
+      "test_patch_sha256": "450f49cac71635200c1089d01e4228865afa9e314f28dedcf5b3d33645714fb9",
+      "test_patch_bytes": 2073
+    },
+    {
+      "task_id": "conan-io__conan-13788",
+      "repository_id": "conan-io/conan",
+      "repository_url": "https://github.com/conan-io/conan",
+      "license": "MIT",
+      "base_commit": "c1b3978914dd09e4c07fc8d1e688d5636fda6e79",
+      "issue_url": "https://github.com/conan-io/conan/pull/13788",
+      "source_row_offset": 600,
+      "FAIL_TO_PASS": [
+        "conans/test/integration/graph_lock/graph_lock_build_requires_test.py::test_duplicated_build_host_require[True]"
+      ],
+      "PASS_TO_PASS_count": 9,
+      "test_patch_sha256": "a64a72011ace2494d53cb58b05646d63bf1418f97ad75cf0c3ae23d15260d0a5",
+      "test_patch_bytes": 1598
+    },
+    {
+      "task_id": "iterative__dvc-6893",
+      "repository_id": "iterative/dvc",
+      "repository_url": "https://github.com/treeverse/dvc",
+      "license": "Apache-2.0",
+      "base_commit": "28f57933db4873b2f6fcb466e479754aa016de2f",
+      "issue_url": "https://github.com/treeverse/dvc/pull/6893",
+      "source_row_offset": 675,
+      "FAIL_TO_PASS": [
+        "tests/unit/test_tabular_data.py::test_dropna[cols-any-data2-expected2]",
+        "tests/unit/test_tabular_data.py::test_dropna[rows-any-data0-expected0]",
+        "tests/func/machine/test_machine_config.py::test_machine_list",
+        "tests/unit/test_tabular_data.py::test_dropna[rows-all-data1-expected1]",
+        "tests/func/machine/test_machine_status.py::test_status",
+        "tests/unit/command/test_machine.py::test_list[show_origin1]",
+        "tests/unit/test_tabular_data.py::test_dropna[cols-all-data3-expected3]"
+      ],
+      "PASS_TO_PASS_count": 46,
+      "test_patch_sha256": "2a1286b88981ac15117664d8d23613f17c4caaebad3df9d15b4d2caf8d7c67f8",
+      "test_patch_bytes": 9652
+    },
+    {
+      "task_id": "dask__dask-8462",
+      "repository_id": "dask/dask",
+      "repository_url": "https://github.com/dask/dask",
+      "license": "BSD-3-Clause",
+      "base_commit": "a950fda989e6c405b86764393b3e4a41f18d331b",
+      "issue_url": "https://github.com/dask/dask/pull/8462",
+      "source_row_offset": 900,
+      "FAIL_TO_PASS": [
+        "dask/array/tests/test_array_core.py::test_map_blocks_unique_name_drop_axis",
+        "dask/array/tests/test_array_core.py::test_map_blocks_unique_name_new_axis",
+        "dask/array/tests/test_array_core.py::test_map_blocks_unique_name_chunks_dtype"
+      ],
+      "PASS_TO_PASS_count": 401,
+      "test_patch_sha256": "c8535bd419dcf11fa6d6412e548e9ec594af794433e187fd3b36454ab56947a5",
+      "test_patch_bytes": 2680
+    },
+    {
+      "task_id": "pydantic__pydantic-6293",
+      "repository_id": "pydantic/pydantic",
+      "repository_url": "https://github.com/pydantic/pydantic",
+      "license": "MIT",
+      "base_commit": "78f0ce65295bba764784da15eca83173f9ccf9b6",
+      "issue_url": "https://github.com/pydantic/pydantic/pull/6293",
+      "source_row_offset": 1050,
+      "FAIL_TO_PASS": [
+        "tests/test_dataclasses.py::test_pydantic_field_annotation",
+        "tests/test_annotated.py::test_annotated_model_exceptions[<lambda>-0-exc_handler0]",
+        "tests/test_dataclasses.py::test_combined_field_annotations"
+      ],
+      "PASS_TO_PASS_count": 155,
+      "test_patch_sha256": "08e7c85e0e06cc78ddaf435a6341a94c37932247bb7ec95da66eef26e64f9553",
+      "test_patch_bytes": 2844
+    },
+    {
+      "task_id": "pandas-dev__pandas-49156",
+      "repository_id": "pandas-dev/pandas",
+      "repository_url": "https://github.com/pandas-dev/pandas",
+      "license": "BSD-3-Clause",
+      "base_commit": "4583a045e7123032dbf7856429ef411713a6937b",
+      "issue_url": "https://github.com/pandas-dev/pandas/pull/49156",
+      "source_row_offset": 1200,
+      "FAIL_TO_PASS": [
+        "pandas/tests/extension/test_arrow.py::TestBaseMethods::test_where_series[False-timestamp[us]]",
+        "pandas/tests/extension/test_arrow.py::TestBaseMethods::test_where_series[False-timestamp[ns,",
+        "pandas/tests/extension/test_arrow.py::TestBaseMethods::test_where_series[True-duration[s]]",
+        "pandas/tests/extension/test_arrow.py::TestBaseMethods::test_where_series[True-duration[us]]",
+        "pandas/tests/extension/test_arrow.py::TestBaseMethods::test_where_series[False-time64[ns]]",
+        "pandas/tests/extension/test_arrow.py::TestBaseMethods::test_where_series[True-date64[ms]]",
+        "pandas/tests/extension/test_arrow.py::TestBaseMethods::test_where_series[False-timestamp[ns]]",
+        "pandas/tests/extension/test_arrow.py::TestBaseMethods::test_where_series[False-timestamp[us,",
+        "pandas/tests/extension/test_arrow.py::TestBaseMethods::test_where_series[True-time32[ms]]",
+        "pandas/tests/extension/test_arrow.py::TestBaseMethods::test_where_series[True-timestamp[ns]]",
+        "pandas/tests/extension/test_arrow.py::TestBaseMethods::test_where_series[True-timestamp[us,",
+        "pandas/tests/extension/test_arrow.py::TestBaseMethods::test_where_series[True-timestamp[ms,",
+        "pandas/tests/extension/test_arrow.py::TestBaseMethods::test_where_series[False-date32[day]]",
+        "pandas/tests/extension/test_arrow.py::TestBaseMethods::test_where_series[True-time64[ns]]",
+        "pandas/tests/extension/test_arrow.py::TestBaseMethods::test_where_series[False-timestamp[s,",
+        "pandas/tests/extension/test_arrow.py::TestBaseMethods::test_where_series[True-timestamp[ms]]",
+        "pandas/tests/extension/test_arrow.py::TestBaseMethods::test_where_series[False-time32[ms]]",
+        "pandas/tests/extension/test_arrow.py::TestBaseMethods::test_where_series[True-timestamp[ns,",
+        "pandas/tests/extension/test_arrow.py::TestBaseMethods::test_where_series[False-time64[us]]",
+        "pandas/tests/extension/test_arrow.py::TestBaseMethods::test_where_series[True-time64[us]]",
+        "pandas/tests/extension/test_arrow.py::TestBaseMethods::test_where_series[True-timestamp[s]]",
+        "pandas/tests/extension/test_arrow.py::TestBaseMethods::test_where_series[False-time32[s]]",
+        "pandas/tests/extension/test_arrow.py::TestBaseMethods::test_where_series[False-duration[ns]]",
+        "pandas/tests/extension/test_arrow.py::TestBaseMethods::test_where_series[True-time32[s]]",
+        "pandas/tests/extension/test_arrow.py::TestBaseMethods::test_where_series[True-timestamp[s,",
+        "pandas/tests/extension/test_arrow.py::TestBaseMethods::test_where_series[False-duration[s]]",
+        "pandas/tests/extension/test_arrow.py::TestBaseMethods::test_where_series[False-duration[us]]",
+        "pandas/tests/extension/test_arrow.py::TestBaseMethods::test_where_series[False-timestamp[s]]",
+        "pandas/tests/extension/test_arrow.py::TestBaseMethods::test_where_series[True-timestamp[us]]",
+        "pandas/tests/extension/test_arrow.py::TestBaseMethods::test_where_series[True-duration[ms]]",
+        "pandas/tests/extension/test_arrow.py::TestBaseMethods::test_where_series[True-duration[ns]]",
+        "pandas/tests/extension/test_arrow.py::TestBaseMethods::test_where_series[False-timestamp[ms,",
+        "pandas/tests/extension/test_arrow.py::TestBaseMethods::test_where_series[False-date64[ms]]",
+        "pandas/tests/extension/test_arrow.py::TestBaseMethods::test_where_series[True-date32[day]]",
+        "pandas/tests/extension/test_arrow.py::TestBaseMethods::test_where_series[False-timestamp[ms]]",
+        "pandas/tests/extension/test_arrow.py::TestBaseMethods::test_where_series[False-duration[ms]]"
+      ],
+      "PASS_TO_PASS_count": 11656,
+      "test_patch_sha256": "1a0a70244612985fa51c728491b8e425d65e1da3be6ee271a2af94a6f5a18cc0",
+      "test_patch_bytes": 1004
+    },
+    {
+      "task_id": "facebookresearch__hydra-1422",
+      "repository_id": "facebookresearch/hydra",
+      "repository_url": "https://github.com/hydra-ecosystem/hydra",
+      "license": "MIT",
+      "base_commit": "1df6e295301df0eef3dec9b1f5080c6344eeebf3",
+      "issue_url": "https://github.com/hydra-ecosystem/hydra/pull/1422",
+      "source_row_offset": 1875,
+      "FAIL_TO_PASS": [
+        "tests/test_compose.py::test_adding_to_sc_dict[add_no_plus0]",
+        "tests/test_hydra.py::test_hydra_env_set_with_override"
+      ],
+      "PASS_TO_PASS_count": 89,
+      "test_patch_sha256": "555b22abdbc038c88dd96f7843a9530d84d92c4677778f0b75b26d2d24517aba",
+      "test_patch_bytes": 4753
+    },
+    {
+      "task_id": "bokeh__bokeh-13491",
+      "repository_id": "bokeh/bokeh",
+      "repository_url": "https://github.com/bokeh/bokeh",
+      "license": "BSD-3-Clause",
+      "base_commit": "6ae71c61f856696297b195125f225fa2e8766efb",
+      "issue_url": "https://github.com/bokeh/bokeh/pull/13491",
+      "source_row_offset": 1950,
+      "FAIL_TO_PASS": [
+        "tests/unit/bokeh/test_tile_providers.py::Test_GetProvider::test_get_provider[STAMEN_TONER]",
+        "tests/unit/bokeh/test_tile_providers.py::Test_StamenProviders::test_url[STAMEN_TONER]",
+        "tests/unit/bokeh/test_tile_providers.py::Test_StamenProviders::test_attribution[STAMEN_TERRAIN_RETINA]",
+        "tests/unit/bokeh/test_tile_providers.py::Test_StamenProviders::test_copies[STAMEN_TERRAIN_RETINA]",
+        "tests/unit/bokeh/models/test_plots.py::test_add_tile[STAMEN_TERRAIN_RETINA-provider5]",
+        "tests/unit/bokeh/models/test_plots.py::test_add_tile[STAMEN_TERRAIN-provider4]",
+        "tests/unit/bokeh/test_tile_providers.py::Test_StamenProviders::test_copies[STAMEN_TERRAIN]",
+        "tests/unit/bokeh/test_tile_providers.py::Test_StamenProviders::test_url[STAMEN_TERRAIN]",
+        "tests/unit/bokeh/test_tile_providers.py::Test_StamenProviders::test_copies[STAMEN_TONER]",
+        "tests/unit/bokeh/test_tile_providers.py::Test_StamenProviders::test_attribution[STAMEN_TONER_BACKGROUND]",
+        "tests/unit/bokeh/test_tile_providers.py::Test_GetProvider::test_get_provider[STAMEN_TONER_LABELS]",
+        "tests/unit/bokeh/test_tile_providers.py::Test_GetProvider::test_get_provider[STAMEN_TONER_BACKGROUND]",
+        "tests/unit/bokeh/test_tile_providers.py::Test_StamenProviders::test_copies[STAMEN_TONER_LABELS]",
+        "tests/unit/bokeh/test_tile_providers.py::Test_StamenProviders::test_attribution[STAMEN_TONER]",
+        "tests/unit/bokeh/test_tile_providers.py::Test_StamenProviders::test_attribution[STAMEN_TERRAIN]",
+        "tests/unit/bokeh/test_tile_providers.py::Test_StamenProviders::test_url[STAMEN_TONER_BACKGROUND]",
+        "tests/unit/bokeh/test_tile_providers.py::Test_GetProvider::test_get_provider[STAMEN_TERRAIN_RETINA]",
+        "tests/unit/bokeh/test_tile_providers.py::Test_StamenProviders::test_url[STAMEN_TONER_LABELS]",
+        "tests/unit/bokeh/test_tile_providers.py::Test_GetProvider::test_get_provider[STAMEN_TERRAIN]",
+        "tests/unit/bokeh/models/test_plots.py::test_add_tile[STAMEN_TONER_LABELS-provider8]",
+        "tests/unit/bokeh/models/test_plots.py::test_add_tile[STAMEN_TONER_BACKGROUND-provider7]",
+        "tests/unit/bokeh/test_tile_providers.py::Test_StamenProviders::test_url[STAMEN_TERRAIN_RETINA]",
+        "tests/unit/bokeh/test_tile_providers.py::Test_StamenProviders::test_copies[STAMEN_TONER_BACKGROUND]",
+        "tests/unit/bokeh/models/test_plots.py::test_add_tile[STAMEN_TONER-provider6]",
+        "tests/unit/bokeh/test_tile_providers.py::Test_StamenProviders::test_attribution[STAMEN_TONER_LABELS]"
+      ],
+      "PASS_TO_PASS_count": 79,
+      "test_patch_sha256": "8e9babfeb352b34f33830a6b77186decef7347bbfd5c4ad1800bcc06422179e0",
+      "test_patch_bytes": 3514
+    },
+    {
+      "task_id": "Project-MONAI__MONAI-2508",
+      "repository_id": "Project-MONAI/MONAI",
+      "repository_url": "https://github.com/Project-MONAI/MONAI",
+      "license": "Apache-2.0",
+      "base_commit": "68142392a180b96b2b427dc320737c4ae49e0da3",
+      "issue_url": "https://github.com/Project-MONAI/MONAI/pull/2508",
+      "source_row_offset": 2025,
+      "FAIL_TO_PASS": [
+        "tests/test_handler_checkpoint_loader.py::TestHandlerCheckpointLoader::test_strict_shape"
+      ],
+      "PASS_TO_PASS_count": 5,
+      "test_patch_sha256": "77943c2ccc127b7efebeaef4039b40a653ccfad93db715e45714537b2916c731",
+      "test_patch_bytes": 2306
+    },
+    {
+      "task_id": "modin-project__modin-6785",
+      "repository_id": "modin-project/modin",
+      "repository_url": "https://github.com/modin-project/modin",
+      "license": "Apache-2.0",
+      "base_commit": "76d741bec279305b041ba5689947438884893dad",
+      "issue_url": "https://github.com/modin-project/modin/pull/6785",
+      "source_row_offset": 2400,
+      "FAIL_TO_PASS": [
+        "modin/pandas/test/dataframe/test_binary.py::test___divmod__[<lambda>1]",
+        "modin/pandas/test/dataframe/test_binary.py::test___divmod__[<lambda>0]",
+        "modin/pandas/test/dataframe/test_binary.py::test___rdivmod__"
+      ],
+      "PASS_TO_PASS_count": 520,
+      "test_patch_sha256": "fbd2a27a4050dc48c327faa95d9eae7e5a79805eafcad593417a47c1224e6e9e",
+      "test_patch_bytes": 750
+    }
+  ]
+}
