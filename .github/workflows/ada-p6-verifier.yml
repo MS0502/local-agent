@@ -1,0 +1,35 @@
+name: ADA P6 External Verifier
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ada-p6-verifier
+  cancel-in-progress: false
+
+jobs:
+  verify:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 45
+    steps:
+      - name: Checkout preflight code only
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+          fetch-depth: 1
+      - name: Runner and Docker preflight (no SWE-Gym image pull)
+        run: python3 p6-verifier/runner_preflight.py --output-dir p6-verifier-results
+      - name: Build output manifest
+        if: always()
+        run: python3 p6-verifier/collect_receipts.py p6-verifier-results
+      - name: Upload preflight evidence
+        if: always()
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        with:
+          name: ada-p6-runner-preflight
+          path: p6-verifier-results/
+          if-no-files-found: error
+          retention-days: 14
